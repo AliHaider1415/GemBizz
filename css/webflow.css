@@ -324,7 +324,8 @@ button,
   display: none;
   margin-top: 10px;
   padding: 10px;
-  background-color: #ffdede;
+  background-color: red;
+  color: #d1cdcd
 }
 label {
   display: block;
@@ -340,11 +341,13 @@ label {
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #333333;
+  color: #d1cdcd;
   vertical-align: middle;
   background-color: #ffffff;
   border: 1px solid #cccccc;
 }
+
+
 .w-input::placeholder,
 .w-select::placeholder {
   color: #999;

@@ -72,8 +72,10 @@
   background-color: #0000;
 }
 
+
+
 .submit-button {
-  background-color: #12125c;
+  background-color: red;
 }
 
 .section-2 {
@@ -82,6 +84,49 @@
   padding-top: 3vw;
   padding-left: 2vw;
 }
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.dollar-sign {
+  position: relative;
+  font-size: 16px;
+  color: #d1cdcd;
+  padding-bottom: 10px;
+}
+
+.text-field-4 {
+  padding-left: 10px; /* Space for the dollar sign */
+  border: none;
+  border-bottom: 1px solid #333;
+  outline: none;
+  font-size: 16px;
+  width: 100%;
+}
+
+.text-field-4:focus {
+  border-bottom: 2px solid #007BFF; /* Changes color when focused */
+}
+
+.w-input {
+  -moz-appearance: textfield;
+}
+
+.w-input::-webkit-outer-spin-button,
+.w-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 
 .div-block-10 {
   grid-column-gap: 2vw;
@@ -141,6 +186,7 @@
   padding-bottom: 1vw;
   position: fixed;
   inset: 0% 0% auto;
+  z-index: 10;
 }
 
 .heading-5 {
@@ -172,6 +218,8 @@
 }
 
 @media screen and (max-width: 479px) {
+
+  
   .section {
     background-color: #181616;
     border-top: 1px solid #d1cdcd;
@@ -179,6 +227,16 @@
     margin-bottom: 0;
     padding-top: 7%;
     padding-bottom: 7%;
+  }
+
+  .text-field-4 {
+    margin-left: 7px;
+    padding-left: 10px; /* Space for the dollar sign */
+    border: none;
+    border-bottom: 1px solid #333;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
   }
 
   .body {
@@ -267,12 +325,6 @@
     font-weight: 600;
   }
 
-  input[type="text"],
-input[type="email"],
-input[type="password"],
-textarea {
-    color: white; /* Change text color to white */
-}
 
   .field-label-12 {
     font-family: Montserrat, sans-serif;
